@@ -26,6 +26,7 @@ This repository is a collection of examples and explanations for the most common
 **Usage:**  
 ```dockerfile
 FROM ubuntu:20.04
+```dockerfile
 
 2. RUN
 
