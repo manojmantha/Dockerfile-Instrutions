@@ -1,4 +1,4 @@
-FROM alamlinux:9
+FROM almalinux:9
 
 RUN useradd expense
 
