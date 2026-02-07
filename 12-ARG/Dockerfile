@@ -5,6 +5,6 @@ ENV goal="DevOps Engineer" \
 
 ARG name="Manoj Mantha"
 
-RUN echo "Your name : ${name}"
+RUN echo "Your name : ${name}" > /name.txt
 
 CMD ["sleep", "50"]
