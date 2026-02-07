@@ -6,4 +6,6 @@ RUN rm -rf /usr/share/nginx/html/index.html
 
 ADD https://raw.githubusercontent.com/manojmantha/Dockerfile-Instrutions/refs/heads/main/1-FROM/Dockerfile /usr/share/nginx/html/index.html
 
+RUN chmod +r /usr/share/nginx/html/index.html
+
 CMD ["nginx", "-g", "daemon off;"]
