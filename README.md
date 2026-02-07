@@ -26,7 +26,7 @@ This repository is a collection of examples and explanations for the most common
 **Usage:**  
 ```dockerfile
 FROM ubuntu:20.04
-```dockerfile
+```
 
 2. RUN
 
@@ -34,7 +34,9 @@ Description: Installs packages or executes commands during the build. Each RUN c
 Last Updated: 3 hours ago
 Usage:
 
+```dockerfile
 RUN apt-get update && apt-get install -y curl
+```
 
 3. CMD
 
@@ -42,7 +44,9 @@ Description: Specifies the default command to run when the container starts. Can
 Last Updated: 3 hours ago
 Usage:
 
+```dockerfile
 CMD ["node", "app.js"]
+```
 
 4. COPY
 
@@ -50,7 +54,9 @@ Description: Copies files or directories from the host system to the container.
 Last Updated: 2 hours ago
 Usage:
 
+```dockerfile
 COPY ./app /usr/src/app
+```
 
 5. ADD
 
@@ -58,7 +64,9 @@ Description: Similar to COPY, but also supports URLs and automatic extraction of
 Last Updated: 2 hours ago
 Usage:
 
+```dockerfile
 ADD https://example.com/file.tar.gz /usr/src/app/
+```
 
 6. LABEL
 
@@ -66,7 +74,9 @@ Description: Adds metadata to an image (author, version, description, etc.) for 
 Last Updated: 2 hours ago
 Usage:
 
+```dockerfile
 LABEL maintainer="yourname@example.com"
+```
 
 7. EXPOSE
 
@@ -74,7 +84,9 @@ Description: Documents which port the container listens on. Does not actually pu
 Last Updated: 2 hours ago
 Usage:
 
+```dockerfile
 EXPOSE 80
+```
 
 8. ENV
 
@@ -82,7 +94,9 @@ Description: Sets environment variables inside the container, available during b
 Last Updated: 2 hours ago
 Usage:
 
+```dockerfile
 ENV NODE_ENV=production
+```
 
 9. ENTRYPOINT
 
@@ -90,7 +104,9 @@ Description: Configures a container to run as an executable, making CMD argument
 Last Updated: Not specified
 Usage:
 
+```dockerfile
 ENTRYPOINT ["python3", "app.py"]
+```
 
 10. USER
 
@@ -98,7 +114,9 @@ Description: Sets the user to use when running the container.
 Last Updated: 52 minutes ago
 Usage:
 
+```dockerfile
 USER appuser
+```
 
 11. WORKDIR
 
@@ -106,7 +124,9 @@ Description: Sets the working directory inside the container.
 Last Updated: 46 minutes ago
 Usage:
 
+```dockerfile
 WORKDIR /usr/src/app
+```
 
 12. ARG
 
@@ -114,4 +134,6 @@ Description: Defines a build-time variable that can be passed to the Docker buil
 Last Updated: 35 minutes ago
 Usage:
 
+```dockerfile
 ARG VERSION=1.0
+```
