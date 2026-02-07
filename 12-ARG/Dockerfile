@@ -1,4 +1,6 @@
-FROM almalinux:9
+ARG version
+
+FROM almalinux:${version}
 
 ENV goal="DevOps Engineer" \
     duration="2 Months" 
@@ -6,5 +8,7 @@ ENV goal="DevOps Engineer" \
 ARG name="Manoj Mantha"
 
 RUN echo "Your name : ${name}" > /name.txt
+
+RUN echo "Version : ${version}" > /version.txt
 
 CMD ["sleep", "50"]
